@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>repackage — one video in, the right cut out for every platform</title>
+<meta name="description" content="Stop re-cutting the same video for TikTok, YouTube and Instagram. Upload once, get a correct version for each platform.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <span class="brand">repackage</span>
+    <span class="tag">early — not built yet</span>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>You made one video.<br>Now you have to make it<br>three more times.</h1>
+    <p class="lede">
+      Every platform wants a different version. Different framing, different
+      pacing, different caption size, different length. So you sit in your
+      editor, re-cutting the same footage — over and over.
+    </p>
+    <p class="lede">
+      <strong>repackage</strong> takes one video and produces the correct cut for
+      each platform you post to.
+    </p>
+    <div class="cta">
+      <a class="btn" href="#join">Join the waitlist</a>
+    </div>
+    <p class="micro">Not an editor. The thing that feeds it correctly.</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2 class="h2">The loop you're stuck in</h2>
+    <div class="loop">
+      <div class="loop-step">
+        <span class="num">1</span>
+        <h3>Cut for TikTok</h3>
+        <p>Vertical. Fast opening. Captions burned in because most people watch muted.</p>
+      </div>
+      <div class="loop-step">
+        <span class="num">2</span>
+        <h3>Cut for YouTube</h3>
+        <p>Widescreen. Room to breathe. Same content, completely different rhythm.</p>
+      </div>
+      <div class="loop-step">
+        <span class="num">3</span>
+        <h3>Cut for Instagram</h3>
+        <p>Different again. Safe margins, different caption placement, different length.</p>
+      </div>
+    </div>
+    <p class="pull">
+      Nothing about the <em>content</em> changed. You just re-edited it three times
+      so each platform would accept it.
+    </p>
+  </div>
+</section>
+
+<section class="band alt">
+  <div class="wrap">
+    <h2 class="h2">What's actually different per platform</h2>
+    <p class="sub">This isn't guesswork. It's documented, and it changes often enough that manual work never catches up.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th></th><th>TikTok</th><th>YouTube</th><th>Instagram</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>Aspect</th><td>9:16</td><td>16:9</td><td>1:1 or 4:5</td></tr>
+          <tr><th>Sweet spot</th><td>15–35s</td><td>Longer is fine</td><td>30–90s</td></tr>
+          <tr><th>Captions</th><td>Essential</td><td>Optional</td><td>Common</td></tr>
+          <tr><th>Pacing</th><td>Fast</td><td>Room to breathe</td><td>Medium</td></tr>
+          <tr><th>Safe margins</th><td>UI overlaps edges</td><td>Minimal</td><td>Both sides</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="under">
+      These rules shift without warning. The day a platform quietly changes its
+      safe-area, every clip you already made is wrong again.
+    </p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2 class="h2">What we are not</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Not a video editor</h3>
+        <p>You keep using whatever you like — CapCut, Premiere, DaVinci, OpenCut.
+        We're the layer that prepares correct inputs for all of them.</p>
+      </div>
+      <div class="card">
+        <h3>Not AI generation</h3>
+        <p>Generation is already cheap and getting cheaper. We don't make video.
+        We decide how existing video should be shaped for where it's going.</p>
+      </div>
+      <div class="card">
+        <h3>Not a replacement</h3>
+        <p>When the work is genuinely creative, you should still edit it yourself.
+        This handles the part that's mechanical.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band alt">
+  <div class="wrap">
+    <h2 class="h2">Where it starts</h2>
+    <div class="start">
+      <div class="start-step">
+        <span class="num">1</span>
+        <h3>One video in</h3>
+        <p>Long-form, raw footage, or a finished cut. Whatever you actually have.</p>
+      </div>
+      <div class="start-step">
+        <span class="num">2</span>
+        <h3>You choose the platforms</h3>
+        <p>Not all of them. Only the ones you post to. We don't guess.</p>
+      </div>
+      <div class="start-step">
+        <span class="num">3</span>
+        <h3>Correct cuts out</h3>
+        <p>Framed, paced, captioned and trimmed per platform. Import them into
+        whatever editor you use.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="join" class="join">
+  <div class="wrap join-in">
+    <h2 class="h2">It's not built yet. That's the point.</h2>
+    <p class="sub">
+      Before writing software, we want to know whether this is a real problem or
+      just a tidy idea. So we're not selling anything yet — we're talking to
+      people who do this work.
+    </p>
+
+    <form class="form" id="wl" novalidate>
+      <input type="email" id="email" placeholder="you@example.com" required autocomplete="email">
+      <select id="stacks" aria-label="Which editor do you use">
+        <option value="">Which editor? (optional)</option>
+        <option>CapCut</option>
+        <option>Premiere Pro</option>
+        <option>DaVinci Resolve</option>
+        <option>OpenCut</option>
+        <option>Final Cut</option>
+        <option>Something else</option>
+        <option>I script it (ffmpeg)</option>
+      </select>
+      <button class="btn" type="submit">Join</button>
+    </form>
+    <p class="form-note" id="note">No spam. If it doesn't get built, you'll be told that too.</p>
+
+    <ul class="q">
+      <li><strong>What do you post to?</strong> More than one platform is the whole premise.</li>
+      <li><strong>How long does re-cutting take you?</strong> Currently, per video.</li>
+      <li><strong>What would you refuse to pay for?</strong> Useful to know.</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <span>repackage — a project in validation</span>
+    <span>No accounts. No tracking. Nothing runs in your browser.</span>
+  </div>
+</footer>
+
+<script src="assets/waitlist.js"></script>
+</body>
+</html>
