@@ -61,32 +61,46 @@
   </div>
 
   <!-- the product, shown -->
-  <div class="scene-wrap reveal" style="--d:320ms">
-    <div class="scene-frame">
-      <canvas id="scene" aria-hidden="true"></canvas>
-      <div id="labels" class="scene-labels" aria-hidden="true"></div>
-      <p class="scene-hint">move to look &middot; scroll to split &middot; click a frame</p>
-      <span id="scene-status" class="sr-only"></span>
-    </div>
-
-    <!-- Static fallback. Only shown when WebGL is unavailable. -->
-    <div class="stage-wrap" id="stage-fallback">
-      <div class="stage" id="stage">
-        <div class="stage-src">
-          <div class="label">source</div>
-          <div class="frame frame-src">
-            <div class="content"></div>
-            <span class="dims">16:9 &middot; 00:00 &mdash; 01:42</span>
-          </div>
+  <div class="shell stage-wrap reveal" style="--d:320ms">
+    <div class="stage" id="stage">
+      <div class="stage-src">
+        <div class="label">source</div>
+        <div class="frame frame-src">
+          <div class="content"></div>
+          <span class="dims">16:9 · 00:00 — 01:42</span>
         </div>
-        <div class="stage-wire"><span></span></div>
-        <div class="stage-outs">
-          <div class="label">outputs</div>
-          <div class="outs">
-            <figure class="out" data-ar="9:16"><div class="frame frame-tall"><div class="content"></div><div class="safe"></div></div><figcaption><b>TikTok</b><span>9:16 &middot; 15&ndash;35s</span></figcaption></figure>
-            <figure class="out" data-ar="16:9"><div class="frame frame-wide"><div class="content"></div></div><figcaption><b>YouTube</b><span>16:9 &middot; longer</span></figcaption></figure>
-            <figure class="out" data-ar="1:1"><div class="frame frame-square"><div class="content"></div><div class="safe"></div></div><figcaption><b>Instagram</b><span>4:5 &middot; margins</span></figcaption></figure>
-          </div>
+      </div>
+
+      <div class="stage-wire"><span></span></div>
+
+      <div class="stage-outs">
+        <div class="label">outputs</div>
+        <div class="outs">
+          <figure class="out" data-ar="9:16">
+            <div class="frame frame-tall">
+              <div class="content"></div>
+              <div class="safe"></div>
+              <div class="caption">caption</div>
+            </div>
+            <figcaption><b>TikTok</b><span>9:16 · 15–35s · captions</span></figcaption>
+          </figure>
+
+          <figure class="out" data-ar="16:9">
+            <div class="frame frame-wide">
+              <div class="content"></div>
+              <div class="safe"></div>
+            </div>
+            <figcaption><b>YouTube</b><span>16:9 · longer · room</span></figcaption>
+          </figure>
+
+          <figure class="out" data-ar="1:1">
+            <div class="frame frame-square">
+              <div class="content"></div>
+              <div class="safe"></div>
+              <div class="caption">caption</div>
+            </div>
+            <figcaption><b>Instagram</b><span>4:5 · margins · captions</span></figcaption>
+          </figure>
         </div>
       </div>
     </div>
@@ -240,9 +254,7 @@
   </div>
 </footer>
 
-<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"}}</script>
 <script src="assets/waitlist.js"></script>
-<script type="module" src="assets/scene.js"></script>
 <script src="assets/main.js"></script>
 </body>
 </html>
